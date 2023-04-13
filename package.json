@@ -1,0 +1,20 @@
+{
+  "name": "cobbcalculator",
+  "version": "1.0.0",
+  "description": "Basic calculator for Cobb chiken food conversion table.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmolachino/cobbCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmolachino/cobbCalculator/issues"
+  },
+  "homepage": "https://github.com/fmolachino/cobbCalculator#readme"
+}
