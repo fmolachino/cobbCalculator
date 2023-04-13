@@ -1,5 +1,24 @@
 @import 'reset';
+@import 'fonts';
 @import 'variables';
+@import 'borders';
+
+//html looking.
+html{
+    color: $basic-text-color;
+    font-family: $general-font;
+    background-color: $main-bg-color;
+}
+
+.calculator-font{
+    color: $basic-text-color;
+    font-family: $calculator-font;
+}
+
+.main-header{
+    padding: 10px;
+    border: 6px solid black;
+}
 
 
 

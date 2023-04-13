@@ -1,3 +1,6 @@
-:root{
-    $bg-color: rgba(30, 144, 97, 0.541);
-}
+@import 'fonts';
+$main-bg-color: rgba(30, 144, 97, 0.541);
+$basic-text-color: black;
+$general-font: 'Overpass';
+$calculator-font: 'Bebasneue';
+
