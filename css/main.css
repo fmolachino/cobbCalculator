@@ -60,24 +60,29 @@ table {
 .container {
   color: black;
   font-family: "Overpass";
-  background-color: rgba(11, 42, 79, 0.929);
-  padding: 2% 5%; }
+  background-color: #34495e;
+  padding: 2% 5%;
+  font-size: 20px;
+  text-align: center; }
 
 .main-site-nav {
   width: 100%;
-  height: 100px;
-  background-color: rgba(3, 11, 20, 0.929);
-  color: gold;
+  height: 80px;
+  background-color: #8dc6ff;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .logo-img {
-  width: 120px;
-  height: 100px;
+  width: 110px;
+  height: 80px;
   padding-left: 10px; }
 
-.main-title {
-  color: aqua; }
+.main-site-nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22313f;
+  font-size: 20px; }
 
 .calculator-font {
   color: black;
@@ -86,7 +91,8 @@ table {
 .curved-border {
   padding: 5px;
   border: 2px solid black;
-  border-radius: 18px; }
+  border-radius: 18px;
+  margin: 5px; }
 
 .chicken-race-selection {
   object-fit: contain; }
