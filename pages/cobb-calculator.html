@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="container calculator-font calculator-frame">
+        <div class="input-fields">
+            <label for="age">Chicken age (in days):</label>
+            <input type="number" id="age">
+            <br><br>
+            <label for="amount-chickens">Chicken amount:</label>
+            <input type="number" id="amount-chicken">
+            <br><br>
+        </div>
+        <div class="operationButtons col-12">
+            <button onclick="calculateFood()" class="">Calculate Food Amount</button>
+            <button onclick="clear()" class="">Clear</button>
+        </div>
+        <br><br>
+        <div class="result-area">
+            <label for="result">Result (in kilograms):</label>
+            <input type="text" id="result"> <!--Why disabled????-->
+        </div>
+
+    </div>
     
+    <script src="../js/cobb-calc.js"></script>
+
 </body>
 </html>
