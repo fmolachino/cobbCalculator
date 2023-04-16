@@ -64,25 +64,17 @@ const json = [
 {    "Age": "62",    "Feed": 232},
 {    "Age": "63",    "Feed": 228}];
 
-const maxAge = 65;
+const maxAge = 63;
 
 //I get 2 numbers, first for age and second for amount of chicken. Age will tell me
 //which feed amount i should use for calculations. 
 //and amount will be multiplied by that.
-
-function clear() {
-    let clean = "";
-    document.getElementById("age").value=clean;
-    document.getElementById("amount-chicken").value=clean;
-    document.getElementById("result").value=clean;
-}
 
 
 function calculateFood() {
     let chickenAge = Number(document.getElementById("age").value);
     
     let chickenAmount = Number(document.getElementById("amount-chicken").value);
-    checkAgeInput();
 
     let foodForAge = getAmountOfFoodForAge(chickenAge);
 
@@ -93,9 +85,14 @@ function calculateFood() {
 }
 
 function getAmountOfFoodForAge(chickenAge) {
-    let foodWeight = json[chickenAge].Feed;
-    return foodWeight;
+    if(checkAgeInput()){
+        let foodWeight = json[chickenAge].Feed;
+        return foodWeight;
+    }
+
 }
+
+
 
 function convertGramToKilogram(grams) {
     let kilograms = grams/1000;
@@ -110,10 +107,25 @@ function writeResultDown(result) {
 
 function checkAgeInput() {
     let inputedAge = (document.getElementById("age").value);
-    if(inputedAge >= maxAge || inputedAge<0){
-        alert(`Please enter a valid number for the age (0-65). ${document.getElementById("age").value} is not valid.`,);
+    if(inputedAge > maxAge || inputedAge<0){
+        alert(`Please enter a valid number for the age (0-${maxAge}). ${document.getElementById("age").value} is not valid.`,);
     }
-    else return;
+    return true;
+}
+
+function clearInput() {
+    var getValue= document.getElementById("age");
+    if (getValue.value !="") {
+        getValue.value = "";
+    }
+    getValue= document.getElementById("amount-chicken");
+    if (getValue.value !="") {
+        getValue.value = "";
+    }
+    getValue= document.getElementById("result");
+    if (getValue.value !="") {
+        getValue.value = "";
+    }
 }
 
 
