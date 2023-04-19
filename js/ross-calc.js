@@ -97,7 +97,7 @@ function writeResultDown(result) {
 
 function checkAgeInput() {
     let inputedAge = (document.getElementById("age").value);
-    if(inputedAge > maxAge || inputedAge<=1){
+    if(inputedAge > maxAge || inputedAge<1){
         alert(`Please enter a valid number for the age (1-${maxAge}). ${document.getElementById("age").value} is not valid.`,);
     }
     return true;

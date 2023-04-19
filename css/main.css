@@ -79,6 +79,9 @@ html {
   background-color: #34495e;
   height: 100vh; }
 
+input {
+  font-size: x-large; }
+
 .calc-container {
   align-content: flex-end; }
 
