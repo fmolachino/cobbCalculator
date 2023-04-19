@@ -1,0 +1,13 @@
+@import 'variables';
+button {
+    background-color: $button-bg-color;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: $calculator-font;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 8px;
+  }

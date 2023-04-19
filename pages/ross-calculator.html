@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="calc-container" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Ross - Chicken food calculator</title>
 </head>
-<body>
+<body class="ross-cobb-calc">
+
+    <div class="container calculator-font calculator-frame">
+
+        <!--Results area-->
+        <div class="result-area">
+            <label for="result">Result (in kilograms):</label>
+            <input class="input-age-amount" type="text" id="result" disabled>
+            <label for="result-age-feed">Grams used for calculation:</label>
+            <input class="input-age-amount" type="text" id="result-age-feed" disabled>
+        </div>
+
+        <!--Inputs area-->
+        <div class="input-fields">
+            <div class="age-amount-input-container">
+                <label for="age">Chicken age (in days):</label>
+                <input class="input-age-amount" type="number" id="age" pattern="\d*">
+                
+            </div>
+            <div class="age-amount-input-container">
+                <label for="amount-chickens">Chicken amount:</label>
+                <input class="input-age-amount" type="number" id="amount-chicken" pattern="\d*">
+                
+            </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="operationButtons col-12">
+            <button onclick="calculateFood()" class="">Calculate Food Amount</button>
+            <button onclick="clearInput()" value="clear" class="">Clear</button>
+        </div>
+
+    </div>
     
+    <script src="../js/ross-calc.js"></script>
+
 </body>
 </html>
